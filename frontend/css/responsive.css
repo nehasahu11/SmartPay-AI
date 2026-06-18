@@ -1,0 +1,39 @@
+/* responsive.css - Supplemental responsive tweaks beyond Bootstrap's grid */
+
+@media (max-width: 768px) {
+  .sidebar-smartpay {
+    min-height: auto;
+    margin-bottom: 16px;
+  }
+
+  .hero-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .stat-card .stat-value {
+    font-size: 22px;
+  }
+
+  .voice-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .auth-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .chart-container {
+    padding: 14px;
+  }
+}

@@ -1,0 +1,143 @@
+/* style.css - Global styles for SmartPay AI */
+
+:root {
+  --primary-color: #4361ee;
+  --primary-dark: #3a0ca3;
+  --secondary-color: #4cc9f0;
+  --success-color: #2ec4b6;
+  --danger-color: #e63946;
+  --light-bg: #f8f9fc;
+  --dark-text: #1b1f3b;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+/* Navbar */
+.navbar-smartpay {
+  background: linear-gradient(90deg, var(--primary-dark), var(--primary-color));
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-smartpay .navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: 0.5px;
+}
+
+.navbar-smartpay .nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 500;
+}
+
+.navbar-smartpay .nav-link.active,
+.navbar-smartpay .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Buttons */
+.btn-smartpay {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-smartpay:hover {
+  background-color: var(--primary-dark);
+  color: #fff;
+}
+
+.btn-outline-smartpay {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 8px;
+  font-weight: 600;
+  background: transparent;
+}
+
+.btn-outline-smartpay:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Cards */
+.card-smartpay {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  background: #fff;
+}
+
+/* Hero Section (Landing Page) */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  color: #fff;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-weight: 800;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(67, 97, 238, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+/* Footer */
+.footer-smartpay {
+  background-color: var(--dark-text);
+  color: rgba(255,255,255,0.7);
+  padding: 30px 0;
+  font-size: 14px;
+}
+
+/* Voice Assistant Floating Button */
+.voice-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.voice-btn.listening {
+  background: var(--danger-color);
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(230,57,70,0.5); }
+  70% { box-shadow: 0 0 0 16px rgba(230,57,70,0); }
+  100% { box-shadow: 0 0 0 0 rgba(230,57,70,0); }
+}
+
+.toast-smartpay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+}

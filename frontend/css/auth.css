@@ -1,0 +1,58 @@
+/* auth.css - Styling for login, signup, forgot-password pages */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3a0ca3, #4361ee);
+  padding: 20px;
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+}
+
+.auth-card .logo-text {
+  font-weight: 800;
+  color: #3a0ca3;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.auth-card .subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+.auth-card .form-control {
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.auth-card .form-control:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67,97,238,0.15);
+}
+
+.auth-footer-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.auth-error {
+  font-size: 13px;
+  color: #e63946;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: none;
+}
