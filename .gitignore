@@ -3,3 +3,5 @@ node_modules/
 *.pkl
 *.csv
 .DS_Store
+__pycache__/
+*.pyc
